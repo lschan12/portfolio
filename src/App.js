@@ -11,7 +11,7 @@ function App() {
     <div className="w-full min-h-screen bg-slate-900 text-white">
       <Nav />
       <div className="flex flex-col mx-auto max-w-4xl sm:w-full">
-        <div className="mx-16 my-12">
+        <div className="mx-4 my-2 sm:mx-16 my-12">
           <About />
           <Detail />
           <Projects />

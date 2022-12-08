@@ -4,11 +4,38 @@ html, body, #root {
   scroll-behavior: smooth;
 }
 
+#logo {
+  padding-top: 3%;
+  width: 15%;
+  display: inline-block;
+}
 
+@media (min-width:640px) {
+  #logo {
+    width: 5%;
+    display: inline-block
+  }
+}
 
 #nav-links {
-  li {
-    margin-left: 2%;
-    margin-right: 2%;
+  display: none;
+}
+
+@media (min-width:640px) {
+    #nav-links {
+    // hidden sm:flex flex-row w-[40%] items-center justify-end
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    li {
+      margin-left: 2%;
+      margin-right: 2%;
+    }
   }
+}
+
+#detail {
+  display: flex;
+  flex-direction: row;
 }
