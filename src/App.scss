@@ -5,14 +5,13 @@ html, body, #root {
 }
 
 #logo {
-  padding-top: 3%;
   width: 15%;
   display: inline-block;
 }
 
 @media (min-width:640px) {
   #logo {
-    width: 5%;
+    width: 10%;
     display: inline-block
   }
 }
@@ -37,5 +36,49 @@ html, body, #root {
 
 #detail {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+@media (min-width:640px) {
+  #detail {
+    display: flex;
+    flex-direction: column;
+    #picture-detail{
+      display: flex;
+      flex-direction: row;
+      #profile-picture {
+        padding: 5%;
+        width: 350px;
+        height: 400px;
+        padding-top: 35%;
+        padding-right: 15%;
+        img {
+          max-width: 100%;
+          height: auto;
+          // border-radius: 50%;
+        }
+      }
+      #detail-text {
+        width: 100%;
+        padding: 5%;
+      }
+      li {
+        margin-left: 2%;
+        margin-right: 2%;
+      }
+    }
+    #tech-stack {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      p {
+        margin-right: 7%;
+      }
+      li {
+        width: 100%;
+        padding-right: 10%;
+      }
+    }
+  }
 }

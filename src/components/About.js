@@ -12,7 +12,7 @@ const About = () => {
   return (
     <>
       <Transition show={inView} appear={true}>
-        <div className="flex flex-col items-start min-h-screen pt-6" id="about">
+        <div className="flex flex-col items-start min-h-screen py-6" id="about">
           <Transition.Child
             enter="duration-1000 delay-500"
             enterFrom="-translate-x-32 opacity-0"
@@ -31,11 +31,11 @@ const About = () => {
             leaveFrom="translate-x-0 opacity-100"
             leaveTo="translate-x-0 opacity-100"
           >
-            <h1 className="py-2 text-4xl sm:text-6xl">Lawrence Chan</h1>
-            <h1 className="py-2 text-4xl sm:text-6xl">
+            <h1 className="py-4 text-5xl sm:text-7xl">Lawrence Chan</h1>
+            <h1 className="py-4 text-4xl sm:text-6xl">
               Full Stack Web Developer
             </h1>
-            <hr style={{ height: "3px", width: "50%", color: "white" }} />
+            <hr style={{ height: "3px", width: "66%", color: "white" }} />
           </Transition.Child>
           <Transition.Child
             enter="duration-1000 delay-1000"
@@ -45,7 +45,7 @@ const About = () => {
             leaveFrom="translate-x-0 opacity-100"
             leaveTo="translate-x-0 opacity-100"
           >
-            <p className="w-full py-4 sm:w-1/2 py-6">
+            <p className="w-full py-4 sm:w-2/3 py-6">
               I am a full stack web developer based in Vancouver, Canada, and
               this is my interactive CV.
             </p>

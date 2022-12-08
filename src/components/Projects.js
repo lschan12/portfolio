@@ -1,6 +1,6 @@
 const Projects = () => {
   return (
-    <div id="projects">
+    <div className="min-h-screen py-16" id="projects">
       <h1>Projects</h1>
       <div id="project-gallery">
         <div className="project-detail">
