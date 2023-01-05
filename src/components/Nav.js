@@ -21,7 +21,7 @@ const Nav = () => {
   return (
     <>
       <Transition show={inView} appear={true}>
-        <nav className={`flex flex-row justify-between static drop-shadow-none z-1 px-6 py-4 sm:px-16 py-6 bg-slate-900`}>
+        <nav className={`flex flex-row justify-between static drop-shadow-none z-1 px-6 py-8 sm:px-16 py-6 bg-slate-900`}>
           <Transition.Child
             enter="duration-1000 delay-100"
             enterFrom="-translate-y-32 opacity-0"
@@ -74,7 +74,7 @@ const Nav = () => {
         <ul
           className={
             isNavOpen
-              ? "top-0 fixed h-screen inset-x-0 flex flex-col justify-center items-center z-10 bg-slate-900 transition-top ease duration-1000 "
+              ? "top-0 fixed h-screen inset-x-0 flex flex-col justify-center items-center z-50 bg-slate-900 transition-top ease duration-1000 "
               : "-top-full fixed h-screen inset-x-0 flex flex-col justify-center items-center transition-all ease duration-1000"
           }
         >

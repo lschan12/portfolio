@@ -21,7 +21,7 @@ const About = () => {
             leaveFrom="translate-x-0 opacity-100"
             leaveTo="translate-x-0 opacity-100"
           >
-            <h3 className="py-2 text-base sm:text-3xl">Hi, my name is</h3>
+            <h3 className="py-2 text-xl sm:text-3xl">Hi, my name is</h3>
           </Transition.Child>
           <Transition.Child
             enter="duration-1000 delay-700"
@@ -31,8 +31,8 @@ const About = () => {
             leaveFrom="translate-x-0 opacity-100"
             leaveTo="translate-x-0 opacity-100"
           >
-            <h1 className="py-4 text-5xl sm:text-7xl">Lawrence Chan</h1>
-            <h1 className="py-4 text-4xl sm:text-6xl">
+            <h1 className="py-4 text-6xl sm:text-8xl">Lawrence Chan</h1>
+            <h1 className="py-4 text-6xl sm:text-7xl">
               Full Stack Web Developer
             </h1>
             <hr style={{ height: "3px", width: "66%", color: "white" }} />
@@ -45,22 +45,22 @@ const About = () => {
             leaveFrom="translate-x-0 opacity-100"
             leaveTo="translate-x-0 opacity-100"
           >
-            <p className="w-full py-4 sm:w-2/3 py-6">
+            <p className="w-full py-4 sm:w-2/3 py-6 text-xl">
               I am a full stack web developer based in Vancouver, Canada, and
               this is my interactive CV.
             </p>
-            <div className="flex flex-row items-center w-[80%] mb-4 sm:w-[30%]">
+            <div className="flex flex-row items-center w-[80%] mb-4 sm:w-[30%] text-xl">
               <p>Learn more or reach out</p>
               <div className="mt-4 ml-2 animate-bounce">
                 <FontAwesomeIcon icon={faTurnDown} />
               </div>
             </div>
-            <div className="flex flex-row justify-start" id="about-buttons">
-              <a className="bg-slate-500 rounded-full px-3 py-2" href="#detail">
+            <div className="flex flex-row justify-start min-h-[50px]" id="about-buttons">
+              <a className="bg-slate-500 rounded-full px-3 pt-2.5 w-[25%] text-center  sm:text-lg sm:w-[15%]" href="#detail">
                 About me
               </a>
               <a
-                className="mx-2 bg-lime-400 rounded-full ml-6 px-3 py-2"
+                className="mx-2 bg-lime-400 rounded-full ml-6 px-3 pt-2.5 w-[30%]  text-center sm:text-lg sm:w-[16%]"
                 href="#contact"
               >
                 Contact me

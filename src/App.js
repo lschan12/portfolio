@@ -9,9 +9,9 @@ import Contact from "./components/Contact";
 function App() {
   return (
     <div className="w-full min-h-screen bg-slate-900 text-white">
-      <div className="flex flex-col mx-auto max-w-4xl sm:w-full">
+      <div className="flex flex-col mx-auto px-3 sm:w-full sm:max-w-[100%]">
       <Nav />
-        <div className="mx-4 my-2 sm:mx-24 my-16">
+        <div className="mx-4 my-2 sm:mx-36 sm:my-16">
           <About />
           <Detail />
           <Projects />
