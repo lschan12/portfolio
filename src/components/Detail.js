@@ -18,7 +18,7 @@ const Detail = () => {
             initial={{ opacity: 0, x: -300 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-            style={{ width: "50%", display: "flex", alignItems: "center" }}
+            className="py-4 sm:w-[50%] flex items-center"
           >
             {/* <div id="profile-picture"> */}
             <img
@@ -29,18 +29,22 @@ const Detail = () => {
             {/* </div> */}
           </motion.div>
           <div id="detail-text">
-            <p>{`<h2>`}</p>
+            <p className="htmlTags">{`<h1>`}</p>
             <motion.h1
-              initial={{ opacity: 0, x: 300 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial="hidden"
+              whileInView="visible"
               transition={{ duration: 1 }}
-              className="py-4 pl-0 text-2xl sm:text-6xl sm:pl-6"
+              variants={{
+                visible: { opacity: 1, x: 0 },
+                hidden: { opacity: 0, x: 300 }
+              }}
+              className="mainFont py-4 pl-0 text-6xl sm:text-8xl sm:pl-6"
             >
               About me
             </motion.h1>
-            <p>{`</h2>`}</p>
+            <p className="htmlTags">{`</h1>`}</p>
             <br />
-            <p>{`<p>`}</p>
+            <p className="htmlTags">{`<p>`}</p>
             <motion.p
               initial={{ opacity: 0, x: 300 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -65,7 +69,7 @@ const Detail = () => {
               been built from scratch with different framework, but mostly
               specializing in React.js.
             </motion.p>
-            <p>{`</p>`}</p>
+            <p className="htmlTags">{`</p>`}</p>
           </div>
           {/* </motion.div> */}
         </div>
@@ -78,7 +82,7 @@ const Detail = () => {
             <p className="py-4 sm:text-2xl">
               A list of technologies I am familiar with:
             </p>
-            <ul className="grid grid-rows-3 grid-flow-col gap-2 w-full sm:w-1/2">
+            <ul className="sm:pl-28 grid grid-rows-3 grid-flow-col gap-2 w-full sm:ml=[20%] sm:w-1/2">
               <li>
                 <FontAwesomeIcon icon={faJsSquare} /> Javascript
               </li>

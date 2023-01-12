@@ -10,7 +10,7 @@ const About = () => {
   });
 
   return (
-    <>
+    <main className="flex flex-row">
       <Transition show={inView} appear={true}>
         <div className="flex flex-col items-start min-h-screen py-6" id="about">
           <Transition.Child
@@ -31,8 +31,10 @@ const About = () => {
             leaveFrom="translate-x-0 opacity-100"
             leaveTo="translate-x-0 opacity-100"
           >
-            <h1 className="py-4 text-6xl sm:text-8xl">Lawrence Chan</h1>
-            <h1 className="py-4 text-6xl sm:text-7xl">
+            <h1 className="mainFont py-4 text-4xl sm:text-9xl">
+              Lawrence Chan
+            </h1>
+            <h1 className="mainFont py-4 text-4xl sm:text-8xl opacity-80">
               Full Stack Web Developer
             </h1>
             <hr style={{ height: "3px", width: "66%", color: "white" }} />
@@ -55,12 +57,18 @@ const About = () => {
                 <FontAwesomeIcon icon={faTurnDown} />
               </div>
             </div>
-            <div className="flex flex-row justify-start min-h-[50px]" id="about-buttons">
-              <a className="bg-slate-500 rounded-full px-3 pt-2.5 w-[25%] text-center  sm:text-lg sm:w-[15%]" href="#detail">
+            <div
+              className="flex flex-row justify-start min-h-[50px]"
+              id="about-buttons"
+            >
+              <a
+                className="bg-slate-500 rounded-full px-3 sm:pt-2.5 pt-3 w-[35%] text-center  sm:text-lg sm:w-[15%]"
+                href="#detail"
+              >
                 About me
               </a>
               <a
-                className="mx-2 bg-lime-400 rounded-full ml-6 px-3 pt-2.5 w-[30%]  text-center sm:text-lg sm:w-[16%]"
+                className="mx-2 bg-lime-400 rounded-full ml-6 px-3 sm:pt-2.5 pt-3 w-[35%]  text-center sm:text-lg sm:w-[16%]"
                 href="#contact"
               >
                 Contact me
@@ -70,7 +78,7 @@ const About = () => {
         </div>
       </Transition>
       <div ref={ref} />
-    </>
+    </main>
   );
 };
 
