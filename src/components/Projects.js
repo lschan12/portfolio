@@ -144,7 +144,7 @@ const Projects = () => {
           <div className="project-description sm:w-[45%] px-4">
             <h2 className=" text-6xl py-4">Lighthouse Bistro</h2>
             <p>
-              Food ordering pickup app for an ficticious restaurant. Inspired by
+              Food ordering pickup app for a ficticious restaurant. Inspired by
               Skip the Dishes and other food ordering apps for styling, and
               allows users to order food from a fictitious restaurant where both
               the users and the restaurant gets text message updates for when

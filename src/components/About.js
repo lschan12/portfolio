@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTurnDown } from "@fortawesome/free-solid-svg-icons";
+import { faArrowTurnDown } from "@fortawesome/free-solid-svg-icons";
 import { useInView } from "react-intersection-observer";
 import { Transition } from "@headlessui/react";
 import Social from "./Social";
@@ -13,7 +13,10 @@ const About = () => {
   return (
     <main className="flex flex-row">
       <Transition show={inView} appear={true}>
-        <div className="flex flex-col items-start min-h-screen py-6 min-[2500px]:pr-[10%]" id="about">
+        <div
+          className="flex flex-col items-start min-h-screen py-6 min-[2500px]:pr-[10%]"
+          id="about"
+        >
           <Transition.Child
             enter="duration-1000 delay-500"
             enterFrom="-translate-x-32 opacity-0"
@@ -55,7 +58,7 @@ const About = () => {
             <div className="flex flex-row items-center w-[80%] mb-4 lg:w-[30%] text-xl">
               <p>Learn more or reach out</p>
               <div className="mt-4 ml-2 animate-bounce">
-                <FontAwesomeIcon icon={faTurnDown} />
+                <FontAwesomeIcon icon={faArrowTurnDown} />
               </div>
             </div>
             <div
@@ -78,7 +81,18 @@ const About = () => {
           </Transition.Child>
         </div>
       </Transition>
-      <Social />
+      <Transition
+        show={inView}
+        appear={true}
+        enter="duration-1000 delay-1000"
+        enterFrom="opacity-0"
+        enterTo="opacity-100"
+        leave="transition-opacity duration-150"
+        leaveFrom="opacity-100"
+        leaveTo="opacity-100"
+      >
+        <Social />
+      </Transition>
       <div ref={ref} />
     </main>
   );
