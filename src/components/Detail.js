@@ -18,7 +18,7 @@ const Detail = () => {
             initial={{ opacity: 0, x: -300 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-            className="py-4 sm:w-[50%] flex items-center"
+            className="py-4 lg:w-[50%] flex items-center"
           >
             {/* <div id="profile-picture"> */}
             <img
@@ -38,7 +38,7 @@ const Detail = () => {
                 visible: { opacity: 1, x: 0 },
                 hidden: { opacity: 0, x: 300 }
               }}
-              className="mainFont py-4 pl-0 text-6xl sm:text-8xl sm:pl-6"
+              className="mainFont py-4 pl-0 text-6xl lg:text-8xl lg:pl-6"
             >
               About me
             </motion.h1>
@@ -49,7 +49,7 @@ const Detail = () => {
               initial={{ opacity: 0, x: 300 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1.3 }}
-              className="py-4 pl-6 sm:text-xl"
+              className="py-4 pl-6 lg:text-xl"
             >
               I'm a full stack web developer based in Vancouver, Canada. I first
               started coding in university when I took a few intro to computer
@@ -60,7 +60,7 @@ const Detail = () => {
               initial={{ opacity: 0, x: 300 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1.5 }}
-              className="py-4 pl-6 sm:text-xl"
+              className="py-4 pl-6 lg:text-xl"
             >
               Wanting a change in my career - I decided to pursue my passion to
               code for a living. I have since graduated from Lighthouse Labs and
@@ -79,10 +79,10 @@ const Detail = () => {
           transition={{ duration: 4 }}
         >
           <div id="tech-stack">
-            <p className="py-4 sm:text-2xl">
+            <p className="py-4 lg:text-2xl">
               A list of technologies I am familiar with:
             </p>
-            <ul className="sm:pl-28 grid grid-rows-3 grid-flow-col gap-2 w-full sm:ml=[20%] sm:w-1/2">
+            <ul className="lg:pl-[3rem] grid grid-rows-3 grid-flow-col gap-2 w-full lg:ml=[20%] lg:w-1/2 min-[2500px]:pl-[6rem]">
               <li>
                 <FontAwesomeIcon icon={faJsSquare} /> Javascript
               </li>

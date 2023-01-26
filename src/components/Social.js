@@ -9,7 +9,7 @@ const Social = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="hidden sm:block sm:fixed sm:top-72 sm:right-96"
+      className="hidden lg:block lg:mt-[8%]"
     >
       <ul className="text-4xl">
         <li className="py-1">

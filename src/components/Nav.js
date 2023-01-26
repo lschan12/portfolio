@@ -21,7 +21,7 @@ const Nav = () => {
   return (
     <>
       <Transition show={inView} appear={true}>
-        <nav className={`flex flex-row justify-between static drop-shadow-none z-1 px-6 py-8 sm:px-16 py-6 bg-slate-900`}>
+        <nav className={`flex flex-row justify-between static drop-shadow-none z-1 px-6 py-8 lg:px-16 py-6 bg-slate-900`}>
           <Transition.Child
             enter="duration-1000 delay-100"
             enterFrom="-translate-y-32 opacity-0"
