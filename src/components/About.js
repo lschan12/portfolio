@@ -66,13 +66,13 @@ const About = () => {
               id="about-buttons"
             >
               <a
-                className="bg-slate-500 rounded-full px-3 lg:pt-2.5 pt-3 w-[35%] text-center  lg:text-lg lg:w-[15%]"
+                className="hoverButtons bg-slate-500 rounded-full px-3 lg:pt-2.5 pt-3 w-[35%] text-center  lg:text-lg lg:w-[15%]"
                 href="#detail"
               >
                 About me
               </a>
               <a
-                className="mx-2 bg-lime-400 rounded-full ml-6 px-3 lg:pt-2.5 pt-3 w-[35%]  text-center lg:text-lg lg:w-[16%]"
+                className="hoverButtons mx-2 bg-lime-400 rounded-full ml-6 px-3 lg:pt-2.5 pt-3 w-[35%]  text-center lg:text-lg lg:w-[16%]"
                 href="#contact"
               >
                 Contact me

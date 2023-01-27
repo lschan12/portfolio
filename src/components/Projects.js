@@ -5,7 +5,6 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 
-
 const Projects = () => {
   const busRidersRef = useRef();
   const SQLBaseRef = useRef();
@@ -69,10 +68,15 @@ const Projects = () => {
               with a separate controller client that can be accessed through any
               web device.
             </p>
-            <a className="text-2xl pr-4" href="https://github.com/lschan12/ride-the-bus/tree/main">
-              <FontAwesomeIcon icon={faGithub} />
+            <a
+              className="text-2xl pr-4"
+              href="https://github.com/lschan12/ride-the-bus/tree/main"
+            >
+              <FontAwesomeIcon className="hoverButtons" icon={faGithub} />
             </a>
-            <a href="https://ride-the-bus.onrender.com/"><FontAwesomeIcon icon={faLink} /></a>
+            <a href="https://ride-the-bus.onrender.com/">
+              <FontAwesomeIcon className="hoverButtons" icon={faLink} />
+            </a>
             <ul className="grid grid-rows-3 grid-flow-col gap-2 w-full sm:w-1/2 py-6">
               <li>React</li>
               <li>TypeScript</li>
@@ -123,7 +127,9 @@ const Projects = () => {
               their database. Seed data and visualize charts on their data all
               with no code required.
             </p>
-            <a className='text-2xl' href="https://github.com/rstock-co/SQLBase"><FontAwesomeIcon icon={faGithub} /></a>
+            <a className="text-2xl" href="https://github.com/rstock-co/SQLBase">
+              <FontAwesomeIcon className="hoverButtons" icon={faGithub} />
+            </a>
             <ul className="grid grid-rows-3 grid-flow-col gap-2 w-full py-6 sm:w-1/2">
               <li>React</li>
               <li>Express</li>
@@ -150,8 +156,11 @@ const Projects = () => {
               the users and the restaurant gets text message updates for when
               the order is placed and ready for pickup.
             </p>
-            <a className="text-2xl" href="https://github.com/lschan12/Food-Pickup-Ordering">
-              <FontAwesomeIcon icon={faGithub} />
+            <a
+              className="text-2xl"
+              href="https://github.com/lschan12/Food-Pickup-Ordering"
+            >
+              <FontAwesomeIcon className="hoverButtons" icon={faGithub} />
             </a>
             <ul className="grid grid-rows-3 grid-flow-col gap-2 w-full py-6 sm:w-1/2">
               <li>JQuery</li>

@@ -8,6 +8,7 @@ html, body, #root {
   scroll-behavior: smooth;
   font-family: 'Inter Tight', sans-serif;
   overflow-x: hidden;
+  cursor: none;
 }
 
 .htmlTags {
@@ -119,9 +120,23 @@ html, body, #root {
   }
 }
 
+a {
+  cursor: none;
+}
+
 #social-line {
   margin-top: 5%;
   margin-left: 0.8em;
   border-left: 6px solid white;
   height: 250px;
+}
+
+.hoverButtons {
+  transition: all 1.7s;
+  cursor: none;
+}
+
+.hoverButtons:hover {
+  transform:scale(1.2);
+  transition: all 0.5s;
 }

@@ -9,10 +9,10 @@ const Social = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="hidden lg:block lg:mt-[8%]"
+      className="hidden lg:block lg:mt-[8%] min-[2500px]:ml-[800%]"
     >
       <ul className="text-4xl">
-        <li className="py-1">
+        <li className="hoverButtons py-1">
           <a
             href="https://github.com/lschan12"
             target={"_blank"}
@@ -21,7 +21,7 @@ const Social = () => {
             <FontAwesomeIcon icon={faGithub} />
           </a>
         </li>
-        <li className="py-1">
+        <li className="hoverButtons py-1">
           <a
             href="https://www.linkedin.com/in/lschan12/"
             target={"_blank"}
@@ -30,8 +30,10 @@ const Social = () => {
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
         </li>
-        <li className="py-1">
-          <a href="mailto:lawrence@hotmail.co.uk">
+        <li className="hoverButtons py-1">
+          <a 
+          href="mailto:lawrence@hotmail.co.uk"
+          >
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
         </li>

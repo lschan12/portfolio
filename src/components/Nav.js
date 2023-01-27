@@ -21,7 +21,7 @@ const Nav = () => {
   return (
     <>
       <Transition show={inView} appear={true}>
-        <nav className={`flex flex-row justify-between static drop-shadow-none z-1 px-6 py-8 lg:px-16 py-6 bg-slate-900`}>
+        <nav className={`flex flex-row justify-between static drop-shadow-none px-6 py-8 lg:px-16 py-6 bg-slate-900`}>
           <Transition.Child
             enter="duration-1000 delay-100"
             enterFrom="-translate-y-32 opacity-0"
@@ -52,17 +52,18 @@ const Nav = () => {
               id="nav-links"
             >
               <li>
-                <a href="#detail">About</a>
+                <a className="hoverButtons" href="#detail">About</a>
               </li>
               <li>
-                <a href="#projects">Projects</a>
+                <a className="hoverButtons" href="#projects">Projects</a>
               </li>
               <li>
-                <a href="#contact">Contact</a>
+                <a className="hoverButtons" href="#contact">Contact</a>
               </li>
               <li>
                 <a
                   id="resume-link"
+                  className="hoverButtons" 
                   href="https://resume.creddle.io/resume/bptrsskb6tq"
                 >
                   Resume
