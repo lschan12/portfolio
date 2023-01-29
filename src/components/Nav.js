@@ -80,18 +80,19 @@ const Nav = () => {
           }
         >
           <li>
-            <a href="/#detail">About me</a>
+            <a className="text-2xl" href="/#detail">About me</a>
           </li>
           <li>
-            <a href="/#projects">Projects</a>
+            <a className="text-2xl" href="/#projects">Projects</a>
           </li>
           <li>
-            <a href="/#contact">Contact me</a>
+            <a className="text-2xl" href="/#contact">Contact me</a>
           </li>
           <li>
             <a
               id="resume-link"
               href="https://resume.creddle.io/resume/bptrsskb6tq"
+              className="text-2xl"
             >
               Resume
             </a>
@@ -102,8 +103,8 @@ const Nav = () => {
           >
             <FontAwesomeIcon icon={faXmark} size="lg" />
           </button>
-          <ul className="flex flex-row justify-around">
-            <li>
+          <ul className="flex flex-row justify-around mt-4">
+            <li className="mx-1 text-2xl">
               <a
                 href="https://github.com/lschan12"
                 target={"_blank"}
@@ -112,7 +113,7 @@ const Nav = () => {
                 <FontAwesomeIcon icon={faGithub} />
               </a>
             </li>
-            <li>
+            <li className="mx-1 text-2xl">
               <a
                 href="https://www.linkedin.com/in/lschan12/"
                 target={"_blank"}
@@ -121,7 +122,7 @@ const Nav = () => {
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
             </li>
-            <li>
+            <li className="mx-1 text-2xl">
               <a href="mailto:lawrence@hotmail.co.uk">
                 <FontAwesomeIcon icon={faEnvelope} />
               </a>
